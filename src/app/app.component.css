@@ -1,0 +1,15 @@
+.side_menu{
+    list-style:  none;
+    border-right: 1px solid gray;
+    height: 800px;
+}
+
+header{
+    height: 70px;
+}
+
+
+
+footer{
+    height: 100px;
+}

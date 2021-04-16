@@ -1,0 +1,87 @@
+<!-- //<app-product></app-product> -->
+
+
+
+
+<!--   
+<div  class="container-fluid">  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+        <ul class="navbar-nav">  
+          <li class="nav-item ">  
+            <a routerLink="getAll" class="nav-link" class="btn btn-primary active" role="button" >View Product</a>  <br>
+            <a routerLink="getProdByCat" class="nav-link" class="btn btn-primary active" role="button" >ELECTRONICS</a>  
+          </li>   
+                    
+        </ul>  
+
+      </nav>     
+        <router-outlet></router-outlet>  
+   </div>     -->
+    
+ <!DOCTYPE html>
+   <html>
+       <head>
+           <title>E-COMMERCE</title>
+  
+       </head>
+       <body>
+           <header class="bg-dark p-3">
+               <div class="row">
+                <div class="log_div col-1">
+                  <app-logo></app-logo>
+               </div>
+                <div class="col-md-8">
+                 <app-search></app-search>
+                </div>
+                   <div class="col-md-3 text-right">
+                      <app-navigation></app-navigation>
+                   </div>
+               </div>
+              
+              
+              
+   
+           </header>
+           <div class="row mr-0">
+               <div class="col-md-2">
+                   <ul class="side_menu p-0 bg-dark  mb-0">
+                       <li class="p-2"><a  [routerLink]="['/getProdByCat', bkName]">BOOKS</a></li>
+                       <li class="p-2"><a  [routerLink]="['/getProductByCategory1', elName]" >ELECTRONICS</a></li>
+                       <li class="p-2"> <a routerLink="#">BOOKS</a></li>
+                       <li class="p-2"> <a routerLink="#">Mouse Pads</a></li>
+                   </ul>
+               </div>
+   
+               <div class="col-md-10">
+                   <router-outlet></router-outlet>  
+                  <app-product></app-product>
+               </div>
+           </div>
+           <footer class="row mr-0">
+               <div class="col-md-12 bg-dark footer text-white text-center">
+                   copy &copy 2021
+               </div>
+           </footer>
+           <div >
+   
+   
+           </div>
+           <aside>
+              
+               
+              
+              
+           </aside>
+       </body>
+   </html>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

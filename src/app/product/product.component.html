@@ -1,0 +1,33 @@
+
+ 
+<div class="row mt-4" *ngFor="let obj of response">
+    <div class="col-md-4 mb-4">
+        <img src="{{obj.imageUrl}}" alt="" class="product_image">
+    </div>
+    <div class="col-md-8">
+        <h2 class="productName">
+            {{obj.name}}
+        </h2>
+        <p class="product_description">
+         <span><b>Description:</b></span>   {{obj.description}}
+        </p>
+        <p>
+            <span>
+                <b class="product_price"><span>price:</span> {{obj.unitPrice}} ₹</b>
+            </span>
+        </p>
+        <p class="active_product" *ngIf="obj.active">
+            <span><b>Availability:</b></span>    Available            
+        </p>
+        <p class="active_product" *ngIf="!obj.active">
+            <span><b>Availability:</b></span>  Out of stock            
+         </p>
+        <p class="product_unit">
+            <span><b>Units in stock:</b></span> {{obj.unitsInStock}}</p>
+        <p class="product_created_date">
+            <span><b>Created Date:</b></span>  {{obj.dateCreated}}</p>
+        <p class="last_updated_date">
+            <span><b>Updated Date:</b></span> {{obj.lastUpdated}}</p>
+    </div>
+    <hr class="col-md-12"/>
+</div>
